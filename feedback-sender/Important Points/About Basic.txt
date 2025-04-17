@@ -1,0 +1,7 @@
+** Here we created the points what we get **
+When we create Database with NEXT.JS its a edge database , here connectivity with database is happened when any changes are required , 
+its not like other databases like you coonect it ones and it will run permamentelly 
+
+All  time running nhi rahti when demeand created needed then it will connect and run 
+
+So here firstly we check for that database is connecrted or not if not then connect it 
