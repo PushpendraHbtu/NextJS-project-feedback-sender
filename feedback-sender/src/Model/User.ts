@@ -20,7 +20,7 @@ export interface Message extends Document {   //here we are defining the datatyp
         messages: Message[]; //array of messages
         verifyCode: string;
         isVerified: boolean;
-        verifCodeExpiry : Date;
+        verifyCodeExpiry : Date;
         }
 
 
@@ -29,7 +29,7 @@ export interface Message extends Document {   //here we are defining the datatyp
             email : { type: String, required: [true, "Email Required "] , trim: true , match : [ /.+\@.+\..+/, 'please use a valid email address']  },
             password : { type: String, required: [true, "Password Required "] ,},
             verifyCode : { type: String, required: [true, "Verification Code Required "] },
-            verifCodeExpiry : { type: Date, required: [true, "Verification Code Expiry Required "] },
+            verifyCodeExpiry : { type: Date, required: [true, "Verification Code Expiry Required "] },
 
             isVerified : { type: Boolean, default: false },
             isAcceptingMessages : { type: Boolean, default: true },
